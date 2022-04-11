@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "160931622650",
+    "project_id": "socialmediaapp-7431e",
+    "storage_bucket": "socialmediaapp-7431e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160931622650:android:e4bd23b59d0fad61f9e343",
+        "android_client_info": {
+          "package_name": "com.example.manoo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160931622650-k1mg1pfup7mq5n12q6agrrrbrkueu3ko.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZqmm6v5drZp20DYX4pO-v-f6Bf2YqeDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160931622650-k1mg1pfup7mq5n12q6agrrrbrkueu3ko.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
