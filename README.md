@@ -1,4 +1,4 @@
-# manoo
+# SocialMediaAPP
 
 A new Flutter project.
 
