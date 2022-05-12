@@ -39,5 +39,32 @@ class FireStoreMethods {
     return res;
   }
 
+  Future<String> updateProfile(
+      File? file,
+      String userName,
+      String id,
+      String image
+      ) async {
+
+    String res = "Some error occurred";
+    try {
+
+      String? photoUrl;
+      if (file == null) {
+        photoUrl = image;
+      } else {
+        photoUrl =
+        await StorageService.uploadProfilePicture(file);
+      }
+
+      _firestore.collection('users').doc(id).update({ "userName" : userName , "profilePicture" : photoUrl
+      });
+      res = "success";
+    } catch (err) {
+      res = err.toString();
+    }
+    return res;
+  }
+
 
 }

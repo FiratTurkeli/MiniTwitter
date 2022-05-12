@@ -10,7 +10,6 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(const MyApp());
-  await AuthMethods().loginUser(email: "manoo@social.net", password: "123456");
 }
 
 class MyApp extends StatelessWidget {
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Instagram Clone',
+      title: 'Twitter Clone',
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: primary,
       ),

@@ -7,14 +7,11 @@ import 'package:uuid/uuid.dart';
 import 'package:manoo/constant/constants.dart';
 
 class StorageService {
-  static Future<String> uploadProfilePicture(String url, File imageFile) async {
+  static Future<String> uploadProfilePicture(File imageFile) async {
     String? uniquePhotoId = Uuid().v4();
     File? image = await compressImage(uniquePhotoId, imageFile);
 
-    if (url.isNotEmpty) {
-      RegExp exp = RegExp(r'userProfile_(.*).jpg');
-      uniquePhotoId = exp.firstMatch(url)![1];
-    }
+   // if (url.isNotEmpty) {RegExp exp = RegExp(r'userProfile_(.*).jpg');uniquePhotoId = exp.firstMatch(url)![1];}
     UploadTask uploadTask = storageRef
         .child('images/users/userProfile_$uniquePhotoId.jpg')
         .putFile(image!);

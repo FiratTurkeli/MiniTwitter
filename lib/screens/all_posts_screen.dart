@@ -29,7 +29,7 @@ class _AllPostsState extends State<AllPosts> {
          }
          return ListView.builder(
            itemCount: snapshot.data!.docs.length,
-           itemBuilder: (ctx, index) => PostContainer(snap: snapshot.data!.docs[index].data()),
+           itemBuilder: (ctx, index) => PostContainer(snap: snapshot.data!.docs[index], user: false,),
          );
        },
      ),

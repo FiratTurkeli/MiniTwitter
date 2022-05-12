@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:manoo/constant/color.dart';
 import 'package:manoo/constant/utils.dart';
-import 'package:manoo/providers/user_provider.dart';
+import 'package:manoo/services/auth_methods.dart';
 import 'package:manoo/services/firebase_methods.dart';
 import 'package:provider/provider.dart';
 import 'package:manoo/models/user_model.dart' as model;
@@ -26,33 +26,15 @@ class _PostCardState extends State<PostCard> {
   @override
   void initState() {
     super.initState();
-    fetchCommentLen();
   }
 
-  fetchCommentLen() async {
-    try {
-      QuerySnapshot snap = await FirebaseFirestore.instance
-          .collection('posts')
-          .doc(widget.snap['postId'])
-          .collection('comments')
-          .get();
-      commentLen = snap.docs.length;
-    } catch (err) {
-      showSnackBar(
-        context,
-        err.toString(),
-      );
-    }
-    setState(() {});
-  }
+
 
 
 
   @override
   Widget build(BuildContext context) {
-    final model.UserModel user = Provider.of<UserProvider>(context).getUser;
     final width = MediaQuery.of(context).size.width;
-
     return Container(
       // boundary needed for web
       decoration: BoxDecoration(

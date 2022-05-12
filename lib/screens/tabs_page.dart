@@ -26,6 +26,12 @@ class _TabsPageState extends State<TabsPage> {
         child: Scaffold(
           backgroundColor: primary,
           appBar: AppBar(
+            leading: IconButton(
+                onPressed: () {
+                  AuthMethods().signOut();
+                },
+                icon: Icon(Icons.exit_to_app_rounded)
+            ),
             toolbarHeight: 60,
             elevation: 0,
             backgroundColor: primary,
