@@ -1,14 +1,14 @@
 # MiniTwitter
 
-Twitter'ı modellediğim bir mobil uygulama. Yeni post oluşturma, post silme, tüm kullanıcıların ve kendinin postlarını görüş.
+A mobile application that I model Twitter. Creating a new post, deleting a post, viewing all users' and your own posts.
 
-Küçük bir test için eklenmiş kullanıcı değiştirme özelliği... 
+Added user switching feature for a little test...
 
-FirabaseAuth ile giriş,
-Kullanıcı ve diğer veriler için FirabaseFirestore kullanıldı
-FirabaseStorage fotoğraf depolama
+Login with FirabaseAuth,
+Used FirabaseFirestore for user and other data
+FirabaseStorage photo storage
 
-Aşağıdaki GitHub Hesabımdan daha fazlasını görün
+See more from my GitHub Account below
 
 ## Getting Started
 
