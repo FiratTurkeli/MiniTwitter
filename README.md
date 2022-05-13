@@ -1,6 +1,14 @@
-# SocialMediaAPP
+# MiniTwitter
 
-A new Flutter project.
+Twitter'ı modellediğim bir mobil uygulama. Yeni post oluşturma, post silme, tüm kullanıcıların ve kendinin postlarını görüş.
+
+Küçük bir test için eklenmiş kullanıcı değiştirme özelliği... 
+
+FirabaseAuth ile giriş,
+Kullanıcı ve diğer veriler için FirabaseFirestore kullanıldı
+FirabaseStorage fotoğraf depolama
+
+Aşağıdaki GitHub Hesabımdan daha fazlasını görün
 
 ## Getting Started
 
